@@ -1,0 +1,180 @@
+@media screen and (min-width: 600px) {
+.titre{
+    color:white;}
+.jaune {
+    /*border: 2px solid black;*/
+    background-color:rgb(42, 215, 189);
+    height: 900px;
+
+}
+.knowledge{
+   margin-top: 20px;
+    font-size: 24px;
+}
+.bleu {
+    margin-top: 30px;
+  /* background-color:#1b6d85;*/
+    background-image: url("pcm.jpg");
+    height: 200px;
+    border: solid 1px white;
+    /*text-align: center;*/
+}
+.corps{
+    background-color:honeydew;
+    height: 300px;
+}
+.langage,.software{
+font-size:24px}
+.liens{
+    height: 30px;
+}
+.espace{
+    height: 100px;
+    font-size: 24px;
+}
+img{
+    border-radius: 100%;
+}
+::before{
+    width: 20px;
+}
+.photo{
+    z-index: 1;
+}
+.espace1{
+    height: 100px
+}
+#propos{
+    color: darkblue;
+    text-align: center;
+}
+.menu{
+    height: 70px;
+    color:white;
+    background-color:#122b40;
+
+}
+.menu1 a{
+    color:white;
+}
+.nom{
+    font-size: 24px;
+    font-family:"Standard Symbols L";
+}
+/*nav ul li {
+display: inline-block;
+padding: 0 2em;*/
+/*permet de le centrer dans la div*/
+
+
+nav ul li:hover {
+    background: #00939C;
+}
+/*.formations, .experiences, .competences{
+  height: 200px;*/
+
+.bouton .btn{
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: rgba(99, 158, 151, 0.54)
+}
+.menu1{
+    display: flex;
+    line-height: 3em;
+    font-size: 24px;
+    /*display: inline-block;*/
+    justify-content: center;
+    color:white;
+   /* height: 200px;
+    width: 100px;*/
+}
+.liens{
+    margin-top: 20px;
+}
+.progress-bar {
+    /*text-align: left;*/
+    transition-duration: 2s;
+}
+}
+
+/*les differentes tailles  d'ecran */
+@media screen and (max-width: 600px) {
+    .menu1{
+        display: flex;
+        flex-direction: column;
+    }
+    .competences{
+        height: auto;
+    }
+    /*.menu{
+        height: 120px;
+        color:white;
+        background-color:#122b40;
+    }*/
+    .corps{
+        height: auto;
+    }
+}
+/*timeline*/
+/*body {
+/*background:#111;*/
+/*font-size:18px;
+color:black;*/
+.menu1{
+    display: flex;
+    line-height: 3em;
+    font-size: 24px;
+    /*!*display: inline-block;*!*/
+    justify-content: center;
+    color:white;
+    /*height: 400px;
+   width: 100px;*/
+}
+.menu{
+   /* height: 200px;*/
+    color:white;
+    background-color:#122b40;
+}
+
+.experiences h1 {
+    font-size:2em;
+    text-align:center;
+    /*margin:20px 0 40px;*/
+    padding:0;
+}
+.experiences {
+    background:honeydew;
+    border-top: solid 3px white;
+}
+.right-content, .left-content {
+    float:left;
+    display:block;
+    width:40%;
+    padding:1% 2%;
+}
+.left-content {
+    border-right:5px dotted #666;
+    text-align:left;
+}
+.left-content p {
+    margin:150px 0 0;
+}
+.right-content p {
+    margin:80px 0 150px;
+}
+.experiences p {
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7 ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+.left-content .more-padding {
+    padding-right:100px;
+}
+.right-content .more-padding {
+    /*padding-left:100px;*/
+}
+
+

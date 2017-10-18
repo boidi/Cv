@@ -1,0 +1,45 @@
+.tete{
+  background-color: green;
+height: 90px
+}
+.tete1{
+  background-color: green;
+height: 50px
+}
+.corps{
+  height: 250px;
+  background-color: yellow;
+}
+.bas{
+  height: 100px;
+  background-color: yellow;
+}
+.yeux1, .yeux2{
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 150%;
+}
+.espace{
+  height: 20px;
+}
+.espace1{
+  height: 30px;
+
+}
+.nez{
+  height: 50px;
+  background-color: red;
+  border-radius: 50%
+}
+.moustache, .moustache1{
+  height: 50px;
+  background-color: black;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%
+}
+.bouche{
+  height: 25px;
+  background-color: black;
+
+}
