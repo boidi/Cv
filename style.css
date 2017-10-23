@@ -1,9 +1,10 @@
 @media screen and (min-width: 600px) {
 .titre{
-    color:white;}
+    color:#653A42;
+}
 .jaune {
     /*border: 2px solid black;*/
-    background-color:rgb(42, 215, 189);
+    background-color:#DEE5EB;
     height: 900px;
 
 }
@@ -14,10 +15,12 @@
 .bleu {
     margin-top: 30px;
   /* background-color:#1b6d85;*/
-    background-image: url("pcm.jpg");
-    height: 200px;
+    /*background-image: url("pcm.jpg");*/
+    background: #4C4758;
+    height: 300px;
     border: solid 1px white;
-    /*text-align: center;*/
+
+   /* margin-top: 100px;*/
 }
 .corps{
     background-color:honeydew;
@@ -29,36 +32,96 @@ font-size:24px}
     height: 30px;
 }
 .espace{
-    height: 100px;
+    height: 50px;
     font-size: 24px;
+
 }
-img{
+.photo img{
     border-radius: 100%;
+    margin-top: 50px;
 }
-::before{
-    width: 20px;
-}
-.photo{
+
+    .photos {
+        /*width: 100px;*/
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /*margin-right: 20px;*/
+        margin-top: 20px;}
+
+   .slider img {
+
+        position: absolute;
+
+        display: none;
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+    .slider img:first-of-type {
+
+        display: block;
+
+    }
+    .slider {
+
+        position: relative;
+
+        width: 45vw;
+
+        height: 30vw;
+
+        margin: 0 auto;
+
+        margin-top: 50vh;
+
+        transform: translateY(-50%);
+
+        border: 10px solid #fff;
+
+        border-radius: 5px;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+
+    }
+
+
+    .photo{
     z-index: 1;
 }
 .espace1{
     height: 100px
 }
 #propos{
-    color: darkblue;
+    color:black;
     text-align: center;
+    font-size: 16px;
 }
 .menu{
     height: 70px;
-    color:white;
-    background-color:#122b40;
+    /*color:white;*/
+   /* background-color:#122b40;*/
+    background: white;
+    z-index: 100;
+    position: fixed;
+
 
 }
 .menu1 a{
-    color:white;
+
+    text-decoration: none;
+    color:#653A42 ;
 }
 .nom{
-    font-size: 24px;
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    font-size: 28px;
     font-family:"Standard Symbols L";
 }
 /*nav ul li {
@@ -80,14 +143,13 @@ nav ul li:hover {
     background-color: rgba(99, 158, 151, 0.54)
 }
 .menu1{
+
     display: flex;
     line-height: 3em;
     font-size: 24px;
     /*display: inline-block;*/
     justify-content: center;
-    color:white;
-   /* height: 200px;
-    width: 100px;*/
+  border-bottom: solid 1px black;
 }
 .liens{
     margin-top: 20px;
@@ -96,7 +158,7 @@ nav ul li:hover {
     /*text-align: left;*/
     transition-duration: 2s;
 }
-}
+
 
 /*les differentes tailles  d'ecran */
 @media screen and (max-width: 600px) {
@@ -106,6 +168,7 @@ nav ul li:hover {
     }
     .competences{
         height: auto;
+        color: red;
     }
     /*.menu{
         height: 120px;
@@ -134,7 +197,8 @@ color:black;*/
 .menu{
    /* height: 200px;*/
     color:white;
-    background-color:#122b40;
+   /* background-color:#122b40;*/
+    margin-bottom: 100px;
 }
 
 .experiences h1 {
