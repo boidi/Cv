@@ -1,244 +1,449 @@
-@media screen and (min-width: 600px) {
-.titre{
-    color:#653A42;
-}
-.jaune {
-    /*border: 2px solid black;*/
-    background-color:#DEE5EB;
-    height: 900px;
+@media screen and (min-width: 800px) {
+    body{
+        width: 80%;
+        background: ghostwhite;
+    }
 
-}
-.knowledge{
-   margin-top: 20px;
-    font-size: 24px;
-}
-.bleu {
-    margin-top: 30px;
-  /* background-color:#1b6d85;*/
-    /*background-image: url("pcm.jpg");*/
-    background: #4C4758;
-    height: 300px;
-    border: solid 1px white;
+    .titre {
+        /*color: white;*/
+        margin-top: 15px;
+    }
 
-   /* margin-top: 100px;*/
-}
-.corps{
-    background-color:honeydew;
-    height: 300px;
-}
-.langage,.software{
-font-size:24px}
-.liens{
-    height: 30px;
-}
-.espace{
-    height: 50px;
-    font-size: 24px;
 
-}
-.photo img{
-    border-radius: 100%;
-    margin-top: 50px;
-}
+    .jaune,.bleu,.experiences,.formations{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .formations{margin-bottom: 50px}
 
+    .knowledge {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    #competence {
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .bleu {
+        margin-top: 100px;
+        background: #122b40;
+        height: 300px;
+        border: solid 1px white;
+        margin-bottom: 50px;
+    }
+    #propos {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
     .photos {
-        /*width: 100px;*/
+
         text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         /*margin-right: 20px;*/
-        margin-top: 20px;}
+        margin-top: 20px;
+    }
 
-   .slider img {
+    .photo img {
+        border-radius: 100%;
+        margin-top: 50px;
+    }
 
-        position: absolute;
+    .photo {
+        z-index: 1;
+    }
 
+    .jaune {
+
+        background-color: #ffffff;
+    }
+
+    .langage, .software {
+        font-size: 24px
+    }
+
+    .liens {
+        height: 30px;
+    }
+
+    .espace {
+        height: 50px;
+        font-size: 24px;
+
+    }
+
+
+
+    .espace1 {
+        height: 100px
+    }
+
+
+/*style du navabar*/
+    .menu {
+        height: 70px;
+        /*color:white;*/
+        /* background-color:#122b40;*/
+        background: black;
+        z-index: 100;
+        position: fixed;
+
+    }
+    .menu1 {
+
+        display: flex;
+        line-height: 3em;/* met le texte au centre de la div*/
+        font-size: 20px;
+        /*display: inline-block;*/
+        justify-content: center;
+        /* border-bottom: solid 1px black;*/
+    }
+    .menu1 ul {
+        display: flex;
+    }
+    .menu1 ul li{
+        margin-right: 20px;
+    }
+    .menu a :hover {
+        background: #b9def0;
+        color: black;
+    }
+    .menu1 a {
+
+        text-decoration: none;
+        color: white;
+    }
+/*fin style navabar*/
+
+    /*style section portfolio*/
+    .image1{
+        height:auto ;
+        width: auto;
+        margin-right: 10px;
+       /* display: ;*/
+    }
+    .image{
+        width: 200px;
+        height: 150px;
+        margin-right: 5px;
+    }
+    .testangular{
+        margin-top: 20px;
+        display: flex;
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+    .test1,.test{
+        margin-right: 10px;
+        display: flex;
+    }
+    .all,.back,.front{
+        margin-right: 20px;
+        border: none;
+        background: none;
+        margin-bottom: 50px;
+    }
+    .all:hover,.back:hover,.front:hover{ /*to apply this propriety of those selector*/
+        color: #2e6da4;
+        border-bottom: 2px solid #2e6da4;
+    }
+    .all:focus,.back:focus,.front:focus{ /*to apply this propriety of those selector*/
+        color: #2e6da4;
+        border:none;}
+    ul li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .legende{
+        color: white;
+        background: #269abc;
+        width: 200px;
+        text-align: center;
+    }
+    /*end portfolio*/
+
+    /*pour organiser les formations*/
+    .training{
+        display: flex;
+        margin-left: 20px;
+    }
+    .un, .deux, .trois{
+        width: 300px;
+        height: 200px;
+        /*border: 1px solid black;*/
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 20px;
+        background: white;
+    }
+
+
+    .nom {
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: "Standard Symbols L";
+    }
+
+
+    .load{
+
+
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 50px;
+        line-height:2em;
+        z-index: 1;
+       /* border-radius: 100%;*/
+    }
+    #survol{
         display: none;
-
-        width: 100%;
-
-        height: 100%;
+        color:white;
+        right: 100px;
+        position: absolute;
+        z-index:10;
 
     }
+    /*.load :hover .survol{
+        display:block;
+        color: black;
+        right: 150px;
+    }*/
 
-    .slider img:first-of-type {
+.load a{
+    color: black;
+}
+    /*.formations, .experiences, .competences{
+      height: 200px;*/
+    .bouton .btn {
+        box-sizing: border-box;
+        font-size: 20px;
+        border: 1px solid white;
+        background-color: rgba(99, 158, 151, 0.54)
+    }
 
+
+    .liens {
+        margin-top: 20px;
+    }
+
+    .progress-bar {
+        /*text-align: left;*/
+        transition-duration: 2s;
+    }
+    .exp h1 {
+        font-size: 2em;
+        text-align: center;
+        /*margin:20px 0 40px;*/
+        padding: 0;
+    }
+
+    .exp {
+        background:#ffffff;
+        border-top: solid 2px white;
+        /*margin-left: 100px;
+        margin-right: 100px;*/
+        margin-top: 50px;
+    }
+
+    .right-content, .left-content {
+        float: left;
         display: block;
-
-    }
-    .slider {
-
-        position: relative;
-
-        width: 45vw;
-
-        height: 30vw;
-
-        margin: 0 auto;
-
-        margin-top: 50vh;
-
-        transform: translateY(-50%);
-
-        border: 10px solid #fff;
-
-        border-radius: 5px;
-
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
-
+        width: 40%;
+        padding: 1% 2%;
     }
 
+    .left-content {
+        border-right: 5px dotted #666;
+        text-align: left;
+    }
 
-    .photo{
-    z-index: 1;
-}
-.espace1{
-    height: 100px
-}
-#propos{
-    color:black;
-    text-align: center;
-    font-size: 16px;
-}
-.menu{
-    height: 70px;
-    /*color:white;*/
-   /* background-color:#122b40;*/
-    background: white;
-    z-index: 100;
-    position: fixed;
+    .left-content p {
+        margin: 150px 0 0;
+    }
 
+    .right-content p {
+        margin: 80px 0 150px;
+    }
 
-}
-.menu1 a{
+    .exp p {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7 ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
 
-    text-decoration: none;
-    color:#653A42 ;
-}
-.nom{
-    text-align: center;
-    color:white;
-    margin-top: 50px;
-    font-size: 28px;
-    font-family:"Standard Symbols L";
-}
-/*nav ul li {
-display: inline-block;
-padding: 0 2em;*/
-/*permet de le centrer dans la div*/
+    .left-content .more-padding {
+        padding-right: 100px;
+    }
 
+    .right-content .more-padding {
+        /*padding-left:100px;*/
+    }
+    .modal-footer{
+        text-align: center;
+        background: #122b40;
+        width: 100%;
+        color: white;
+        z-index: 100;
+        position: absolute;
+        height: 50px;
+    }
+    .format{
+        margin-left: 400px;
+    }
 
-nav ul li:hover {
-    background: #00939C;
-}
-/*.formations, .experiences, .competences{
-  height: 200px;*/
-
-.bouton .btn{
-    box-sizing: border-box;
-    font-size: 20px;
-    border: 1px solid white;
-    background-color: rgba(99, 158, 151, 0.54)
-}
-.menu1{
-
-    display: flex;
-    line-height: 3em;
-    font-size: 24px;
-    /*display: inline-block;*/
-    justify-content: center;
-  border-bottom: solid 1px black;
-}
-.liens{
-    margin-top: 20px;
-}
-.progress-bar {
-    /*text-align: left;*/
-    transition-duration: 2s;
 }
 
 
 /*les differentes tailles  d'ecran */
-@media screen and (max-width: 600px) {
-    .menu1{
+@media screen and (max-width: 800px) {
+    .menu1 {
         display: flex;
         flex-direction: column;
     }
-    .competences{
-        height: auto;
-        color: red;
-    }
-    /*.menu{
-        height: 120px;
-        color:white;
-        background-color:#122b40;
-    }*/
-    .corps{
-        height: auto;
-    }
-}
-/*timeline*/
-/*body {
-/*background:#111;*/
-/*font-size:18px;
-color:black;*/
-.menu1{
-    display: flex;
-    line-height: 3em;
-    font-size: 24px;
-    /*!*display: inline-block;*!*/
-    justify-content: center;
-    color:white;
-    /*height: 400px;
-   width: 100px;*/
-}
-.menu{
-   /* height: 200px;*/
-    color:white;
-   /* background-color:#122b40;*/
-    margin-bottom: 100px;
-}
 
-.experiences h1 {
-    font-size:2em;
-    text-align:center;
-    /*margin:20px 0 40px;*/
-    padding:0;
-}
-.experiences {
-    background:honeydew;
-    border-top: solid 3px white;
-}
-.right-content, .left-content {
-    float:left;
-    display:block;
-    width:40%;
-    padding:1% 2%;
-}
-.left-content {
-    border-right:5px dotted #666;
-    text-align:left;
-}
-.left-content p {
-    margin:150px 0 0;
-}
-.right-content p {
-    margin:80px 0 150px;
-}
-.experiences p {
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7 ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
-}
-.left-content .more-padding {
-    padding-right:100px;
-}
-.right-content .more-padding {
-    /*padding-left:100px;*/
+    .competences,.formations,.experiences,.menu,.bleu {
+        height: auto;
+        /*color: red;*/
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 20px;
+    }
+
+    .corps {
+        height: auto;
+    }
+
+    .menu1 {
+        display: flex;
+        line-height: 3em;
+        font-size: 24px;
+        /*!*display: inline-block;*!*/
+        justify-content: center;
+        color: white;
+    }
+
+    .menu {
+
+        color: white;
+
+        margin-bottom: 100px;
+    }
+
+    .exp h1 {
+        font-size: 2em;
+        text-align: center;
+        /*margin:20px 0 40px;*/
+        padding: 0;
+    }
+
+    .exp {
+        background: honeydew;
+        border-top: solid 20px white;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .right-content, .left-content {
+        float: left;
+        display: block;
+        width: 40%;
+        padding: 1% 2%;
+    }
+
+    .left-content {
+        border-right: 5px dotted #666;
+        text-align: left;
+    }
+
+    .left-content p {
+        margin: 150px 0 0;
+    }
+
+    .right-content p {
+        margin: 80px 0 150px;
+    }
+
+    .exp p {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7 ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .left-content .more-padding {
+        padding-right: 100px;
+    }
+
+    .right-content .more-padding {
+        /*padding-left:100px;*/
+    }
+    .image{
+        width: 150px;
+        height: 100px;
+        margin-right: 5px;
+    }
+    .modal-footer{
+
+        background: #122b40;
+        color: white;
+        z-index: 100;
+        position: absolute;
+        margin: 0 0 !important;
+        text-align: center !important;
+        width: 600px !important;
+    }
+    .jaune,.bleu,.experiences,.formations{
+       /* margin-left: 50px;
+        margin-right: 50px;*/
+    }
+    ul li{
+        list-style: none;
+        cursor: pointer;
+    }
+    .testangular{
+        margin-top: 20px;
+        display: flex;
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+    .test1,.test{
+        margin-right: 10px;
+        display: flex;
+    }
+    body{
+        width: 100%;
+        background: ghostwhite;
+    }
+    .training,.testangular{
+        display: block;
+        width: 100%;
+    }
+    .un, .deux, .trois{
+        width: 200px;
+        height: 100px;
+        /*border: 1px solid black;*/
+        margin-left: 70px;
+        text-align: center;
+        padding-top: 20px;
+        background: white;
+    }
+    .format{
+        margin-left:70px;
+    }
+    #formation,#portfolio{
+        width: 500px;
+    }
+
 }
 
 

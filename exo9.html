@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Galeries vignettes</title>
+    <script
+        src="http://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+  </head>
+
+    <!--
+    Réalisez une galerie d'images (toujours en jQuery) :
+    		- 1° en cliquant sur une vignette, l'image apparaît en grand
+    		- 2° Puis vous ajoutez le titre sous l'image : il provient de l'attribut alt de la vignette
+    		- 3° Enfin vous mettez la bordure de la vignette sélectionnée en rouge
+     -->
+
+        <style>
+            body {
+                    background: #12121C;
+                }
+    		#galerie {
+    			width: 80%;
+    			height: 500px;
+    			overflow: hidden;
+    			position: relative;
+    			border: 10px solid #fff;
+          border-radius: 5px;
+    			box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+    		}
+    		#galerie img {
+    			width: 750px;
+    			height: 500px;
+    		}
+            .image{
+                width: 200px;
+                height: 150px;
+                margin-right: 5px;
+            }
+            .testangular{
+                margin-top: 20px;
+                display: flex;
+            }
+            .test1,.test2{
+                margin-right: 10px;
+            }
+    		.container{
+    			width: 850px;
+    			height: 600px;
+    			margin: 0 auto;
+    			margin-top: 50vh;
+                transform: translateY(-50%);
+    		}
+    		.thumbnail  {
+    			width: 80px;
+    			height: 80px;
+    			border: 2px solid #fff;
+    			margin: 10px 5px 0 0;
+    			border-radius: 5px;
+    		}
+    		.thumbnail:hover {
+    			cursor: pointer;
+    		}
+    		.titre {
+    			height: 40px;
+    			width: 100%;
+    			font-size: 30px;
+    			color: #fff;
+    			background: #000;
+    			opacity: 0.5;
+    			position: absolute;
+    			bottom: 0px;
+    			padding-left: 10px;
+    		}
+    		.selected {
+    			border: 2px solid #C63333;
+    		}
+        </style>
+    	<script src="jquery.js"></script>
+    </head>
+    <body>
+    <div class="container">
+    	<div id="galerie">
+    		<img id="image" src="" alt="">
+    		<div class="titre"></div>
+    	</div>
+
+    	<div>
+    		<img class="thumbnail" src="a.jpg"  alt="Corse">
+    		<img class="thumbnail" src="b.jpg"  alt="Jura">
+    		<img class="thumbnail" src="c.jpg"  alt="Bretagne">
+    		<img class="thumbnail" src="d.jpg"  alt="Guadeloupe">
+    	</div>
+        <button>all</button>
+        <button>back-end</button>
+        <button>front-end</button>
+        <div class="testangular">
+
+            <div class="test1">
+                <img class="image" src="a.jpg"  alt="Corse">
+                <img class="image" src="c.jpg"  alt="Bretagne">
+            </div>
+            <div class="test">
+                <img class="image" src="b.jpg"  alt="Jura">
+                <img class="image" src="d.jpg"  alt="Guadeloupe">
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(function(){
+    // $('.thumbnail').click(function(){
+      // afficher la premiere image a l'ouverture de la page
+      var url=$('.thumbnail').eq(0).attr('src');
+      var titre=$('.thumbnail').eq(0).attr('alt');
+      $('#galerie img').attr('src',url);
+      $('titre').html(titre)
+      $('.thumbnail').eq(0).addClass('selected');
+    // });
+      // var titre=('').eq(0).attr()
+      $('.thumbnail').click(function(){
+
+      // on peut ecrire des fonctions js ici
+      // var source=$(this).attr('src');
+      // var legende=$(this).attr('alt');
+      $('#galerie img').attr('src',$(this).attr('src'));
+      // la methode text() modifie le contenu d'une classe
+      // $('titre').html($(this.attr('alt')))
+      $('.titre').text($(this).attr('alt'));
+      //  mettre en blanc toutes les autres classe$
+      $('.thumbnail').removeClass("selected");
+      // mettre la classe
+      $(this).addClass('selected');
+      // });
+
+
+    });
+    });
+    </script>
+
+
+
+  </body>
+</html>
